@@ -51,7 +51,7 @@ INC_DIR = include
 EXE = $(OBJ_DIR)/run_test
 
 # Object files:
-OBJS = $(OBJ_DIR)/main.o $(OBJ_DIR)/cuda_kernel.o
+OBJS = $(OBJ_DIR)/main.o $(OBJ_DIR)/cuda_kernel.o $(OBJ_DIR)/cuda_query_device.o
 
 ###########################################################
 ## Compile and Build Rules ##

@@ -3,6 +3,7 @@
 
 // Include local CUDA header files.
 #include "include/cuda_kernel.cuh"
+#include "include/cuda_query_device.cuh"
 
 
 
@@ -17,10 +18,11 @@ int main() {
     B[0] = 1; B[1] = 1; B[2] = 1;
 
     // Sum array elements across ( C[0] = A[0] + B[0] ) into array C using CUDA.
-    kernel(A, B, C, 3);
+    //kernel(A, B, C, 3);
 
     // Print out result.
-    std::cout << "C = " << C[0] << ", " << C[1] << ", " << C[2] << std::endl;
+    //std::cout << "C = " << C[0] << ", " << C[1] << ", " << C[2] << std::endl;
 
+    query_device();
     return 0;
 }
